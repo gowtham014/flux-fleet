@@ -14,7 +14,7 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: "true"
+  name: kong-deployment
   namespace: flux-system
 spec:
   interval: 1m0s
