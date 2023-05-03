@@ -9,17 +9,3 @@ spec:
   ref:
     branch: main
   url: https://github.com/gowtham014/kong-deployment.git
-Flag --validation has been deprecated, this arg is no longer used, all resources are validated using server-side apply dry-run
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1
-kind: Kustomization
-metadata:
-  name: "true"
-  namespace: flux-system
-spec:
-  interval: 1m0s
-  path: ./
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: kong-deployment
